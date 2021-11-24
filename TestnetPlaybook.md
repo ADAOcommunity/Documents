@@ -16,7 +16,7 @@ This process can be for Windows here: https://www.youtube.com/watch?v=gfHMpDW6W7
 
 If anyone is having trouble accessing the testnet ***OR*** mainnet please feel free to reach out to community members on discord.
 
-***PLEASE*** test to make sure that you actually can use the testnet by running `cardano-cli query tip --testnet-magic 8`, if this command does not work, you are not set up to move to the next step.
+***PLEASE*** test to make sure that you actually can use the testnet by running `cardano-cli query tip --testnet-magic 1097911063`, if this command does not work, you are not set up to move to the next step.
 
 ### After you have the cardano-cli working with a cardano-node
 After you have installed and synced your node, you will need to generate keys and an address to use during the testnet.
