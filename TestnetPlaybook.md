@@ -33,8 +33,7 @@ As a first step, please create a file named owner.json and placed the following 
 {"constructor":0,"fields":[{"bytes":"<YOUR_PUBLIC_KEY_HASH_HERE>"},{"int":0},{"int":0}]}
 ```
 
-*In order to get your public key hash you can run the following command: `cardano-cli address key-hash --payment-verification-key-file testnet
-.vkey`*
+*In order to get your public key hash you can run the following command: `cardano-cli address key-hash --payment-verification-key-file testnet.vkey`*
 
 Modify the `owner.json` so that the second 'int' field contains a value corresponding to less than 120 seconds after the transaction to be submitted in POSIXTIME.
 
