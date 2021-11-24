@@ -27,4 +27,19 @@ To generate key files use: `cardano-cli address key-gen --normal-key --verificat
 After you have your key files you can generate an address with: `cardano-cli address build --payment-verification-key-file testnet.vkey --testnet-magic 8`, please provide this address to @rekd on the discord if you would like testnet Governance Tokens.
 
 ## Interacting with the contract via the CLI
-I will be filling out more here shortly, I have yet to deploy the system on the testnet and I am waiting for my Daedalus Testnet to sync.
+
+As a first step, please create a file named owner.json and placed the following contents inside:
+```
+{"constructor":0,"fields":[{"bytes":"<YOUR_PUBLIC_KEY_HASH_HERE>"},{"int":0},{"int":0}]}
+```
+
+*In order to get your public key hash you can run the following command: `cardano-cli address key-hash --payment-verification-key-file testnet
+.vkey`*
+
+Modify the `owner.json` so that the second 'int' field contains a value corresponding to less than 120 seconds after the transaction to be submitted in POSIXTIME.
+
+After you have this you may use it as the embedded datum file in your transaction to the script.
+
+Create a transaction that sends your governance tokens to the script with your new `owner.json` file as the embedded datum file in the tx.
+
+***I will add to this more in a few hours, I need to do a couple errands for my family.***
