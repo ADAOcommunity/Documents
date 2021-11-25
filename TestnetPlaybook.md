@@ -41,4 +41,23 @@ After you have this you may use it as the embedded datum file in your transactio
 
 Create a transaction that sends your governance tokens to the script with your new `owner.json` file as the embedded datum file in the tx.
 
-***I will add to this more in a few hours, I need to do a couple errands for my family.***
+```
+cardano-cli transaction build --alonzo-era --testnet-magic 1097911063 --protocol-params-file pparams.json \
+--tx-in <UTXO Containing Your GOV Tokens> \
+--tx-out addr_test1wzs92hw4ltkws0vrkh5fvhaw9nwekk98s9xtz9lcp8nvpncmk55fk+20000000+"xxx 4848df818216fe84c2054acca26c6892afff29246be43c7d19ccb743.476f76546f6b656e" \
+--tx-out-datum-embed-file owner.json \
+--change-address <YOUR_ADDRESS> \
+--out-file putO.raw
+```
+
+This command can be used as a general template for building the transaction to lock your governance tokens, it must then be signed by your signing key and submitted to the chain.
+
+After you have submitted this transaction, you can:
+
+1) Create a proposal.
+2) Apply your voting power to a proposal.
+3) Send your owned UTXOs (UTxOs with an Ownership datum as created above) to any other address.
+
+I need to write the transaction templates for these and continue testing the properties of our script. The script address may change over the coming days as bugs are identified and rectified.
+
+***I will add to this more in a few hours, I am spending time with my Grandma.***
