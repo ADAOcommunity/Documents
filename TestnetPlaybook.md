@@ -54,10 +54,28 @@ This command can be used as a general template for building the transaction to l
 
 After you have submitted this transaction, you can:
 
+### 1) Send your owned UTxOs to any other address:
+In order to do this, you will need to build a transaction that consists of the UTxO(s) that you want to move. In addition to this, you will need to make sure that the output is valid, (if it it sent to a script you need to apply a valid datum).
+For example, if you'd like to send the contents of the UTxO back to your address you can use this command to build the transaction:
+*Please make sure ***NOT*** *to modify your owner.json to be valid prior to running this command, this is due to it being used as the "datum" value in the UTxO being redeemed. To submit back to the script, a new modified datum file will be needed, as well as the original*
+
+```
+cardano-cli transaction build --alonzo-era --testnet-magic 1097911063 --protocol-params-file pparams.json \
+--tx-in <UTxO You own in the script> \
+--tx-in <UTxO in your wallet with funds for the fee> \
+--tx-in-script-file validator.plutus \
+--tx-in-datum-embed-file owner.json \
+--tx-in-redeemer-value 42 \
+--tx-in-collateral <UTxO in your wallet with the funds for collateral> \
+--tx-out <YOUR_ADDRESS>+2000000+"xxx 4848df818216fe84c2054acca26c6892afff29246be43c7d19ccb743.476f76546f6b656e" \
+--change-address <YOUR_ADDRESS>
+--out-file redeem.raw
+```
+
+Once you sign and submit the transaction that you just built you should receive the GovTokens that you had locked 
 1) Create a proposal.
 2) Apply your voting power to a proposal.
-3) Send your owned UTXOs (UTxOs with an Ownership datum as created above) to any other address.
+
+***You can download the validator.plutus file here: <Coming shortly> ***
 
 I need to write the transaction templates for these and continue testing the properties of our script. The script address may change over the coming days as bugs are identified and rectified.
-
-***I will add to this more in a few hours, I am spending time with my Grandma.***
