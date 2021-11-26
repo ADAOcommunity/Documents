@@ -61,14 +61,14 @@ For example, if you'd like to send the contents of the UTxO back to your address
 
 ```
 cardano-cli transaction build --alonzo-era --testnet-magic 1097911063 --protocol-params-file pparams.json \
---tx-in <UTxO You own in the script> \
 --tx-in <UTxO in your wallet with funds for the fee> \
+--tx-in <UTxO You own in the script> \
 --tx-in-script-file validator.plutus \
---tx-in-datum-embed-file owner.json \
+--tx-in-datum-file owner.json \
 --tx-in-redeemer-value 42 \
 --tx-in-collateral <UTxO in your wallet with the funds for collateral> \
 --tx-out <YOUR_ADDRESS>+2000000+"xxx 4848df818216fe84c2054acca26c6892afff29246be43c7d19ccb743.476f76546f6b656e" \
---change-address <YOUR_ADDRESS>
+--change-address <YOUR_ADDRESS> \
 --out-file redeem.raw
 ```
 
