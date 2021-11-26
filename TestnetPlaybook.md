@@ -1,3 +1,5 @@
+***NOTICE: The Testnet contract address will change and the contract is likely to have a few bugs, one is currently identified and remdiation plans will be exercised***
+
 ## How to setup for the testnet
 
 Prerequisites:
