@@ -54,24 +54,16 @@ _Missing definition_
 
 In order to function properly ADAO shall appoint core contributors to carry out certain tasks. For a member to become a core contributor they are required to hold the active contributor role and informally voice interest in becoming a CC. To decide if a member will become a CC an official vote has to be initiated, deciding if a members becomes a CC, two existing core contributors have to support the proposal. If the proposal passes with a majority approval of 51% of all tokens in circulation the member will be assigned the core contributor role by server administrators.
 
-Every ADAO member shall be able to initiate the removal of an existing core contributor. The only prerequisite is that their proposal is supported by two existing core contributors. If the proposal passes with a majority approval of 51% of all tokens in circulation the core contributor role will be removed from the member by server administrators.
+Every ADAO member shall be able to initiate the removal of an existing core contributor. The only prerequisite is that the removal proposal is supported by two existing core contributors. If the proposal passes with a majority approval of 51% of all tokens in circulation the core contributor role will be removed from the member by server administrators.
 
-With a deadline of two epochs before The Dozen is slated to begin, ADAO members shall submit proposals detailing how The Dozen shall be structured. Each proposal should outline:
+Every **X** epochs one or more core contributor compensation proposals shall be created and voted on by GovToken holders to award the contribution of existing core contributors since the last compensation proposal has been passed. In this proposal core contributors will list the work they have done, as well as their desired compensation in ADAO GovTokens. The voting period begins **X-1** epochs after the last compensation proposal passed and lasts 72 hours or until a majortiy approval rating of 51% of all tokens in circulation has been reached.
 
-1. What ADAO Members shall be designated as the Core Contributors
-2. What working groups will be funded in The Dozen
-3. The bounty to be paid out to each working group
-4. The Core Contributor(s) responsible for organizing each working group
-5. The end date of The Dozen (which should be 12 epochs in the future unless some special circumstance dictates otherwise).
+The designated bounties shall be paid from the ADAO Treasury into Associated Smart Contracts immediately upon passage of a proposal. These contracts shall have trusted ADAO members designated as Bounty Judges who will control disbursement of the funds. This approach has been chosen to ensure funds can be allocated without requiring a general vote of all ADAO token holders for a basic bounty proposal. The contracts will also have an expiration date encoded, after which time any Cardano wallet can be used to send the unspent funds back to the ADAO treasury.  If any ADAO members believe that the funds were awarded unwisely by the muti-signatories they may appeal to the other members to hold them accountable when considering future bounties.
 
 It should also be noted:
 
-1. Standing groups shall include Administration, Development, Community Management, Education, Governance, Treasury, Outreach, Legal, Graphic Design & Branding, and Public Relation & Marketing.
+1. Standing working groups shall include Administration, Development, Catalyst, Community Management, Education, Governance, Treasury, Legal, Branding-Media & Public Relations.
 2. Ad-hoc groups may be formed as needs arise.
-
-Voting for The Dozen proposals shall be on-chain with Gov Tokens. The voting period begins one epoch before the start of The Dozen and ends 24 hours before The Dozen is slated to  begin.  One winner will be picked according to the rules of the Primary Smart Contract and competing proposals will be discarded. While the Core Contributors will be expected to put forth a proposal for the coming Dozen, competing proposals may be submitted by any ADAO member.
-
-The designated bounties shall be paid from the ADAO Treasury into Associated Smart Contracts immediately upon passage of a proposal. These contracts shall have trusted ADAO members designated as Bounty Judges who will control disbursement of the funds. This approach has been chosen to ensure funds can be allocated without requiring a general vote of all ADAO token holders for a basic bounty proposal. The contracts will also have an expiration date encoded, after which time any Cardano wallet can be used to send the unspent funds back to the ADAO treasury.  If any ADAO members believe that the funds were awarded unwisely by the muti-signatories they may appeal to the other members to hold them accountable when considering future bounties.
 
 ## The ADAO Foundation
 
