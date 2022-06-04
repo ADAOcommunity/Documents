@@ -28,32 +28,42 @@ Membership in ADAO shall be granted to all members of the Cardano community who 
 
 Members shall fall into one or more of the following categories:
 
-1. **GovToken Holders** are individuals who hold the ADAO Governance Token (ADAO). GovToken Holders are responsible for deciding the priorities of the DAO through the proposal process.  No assets may be moved out of the DAO treasury without a vote of GovToken Holders and all program coordination is formalized through votes on proposals.
-2. **Active Contributors** are community volunteers who dedicate their time to DAO projects or working groups. Individuals who contribute can claim bounties from the DAO treasury and use any GovTokens they receive to vote on what projects the DAO should work on next.
-3. **Community Associates** are any member of the Cardano community who chooses to associate with ADAO.  Even if an individual does not yet hold any GovTokens they can engage in legitimate peripheral participation by engaging in community discussions to help guide DAO efforts.
+1. **GovToken Holders** 
 
-In addition to these regular categories, there shall also be members selected to serve on an advisory group of Core Contributors.  These advisors will be responsible for managing the administrative operations of ADAO, overseeing the social media and communication channels, and organizing meetings of ADAO members. 
+Are individuals who hold the ADAO Governance Token (ADAO). GovToken Holders are responsible for deciding the priorities of the DAO through the proposal process.  No assets may be moved out of the DAO treasury without a vote of GovToken Holders and all program coordination is formalized through votes on proposals. To obtain the GovToken Holder role it is necessary to register the wallet holding the GovTokens via HazelBot on ADAOs discord server.
+
+2. **Active Contributors** | Discord role: **ADAO Builder**
+
+Community volunteers who dedicate their time to DAO projects or working groups. Individuals who contribute can claim bounties from the DAO treasury and use any GovTokens they receive to vote on what projects the DAO should work on next. Working group leads will be in charge of nominating members of their working groups to become active contributors, as well as initiating the removal of the role if the member becomes inactive. Roles will be assigned by ADAO server administrators. The ADAO Builder role will be working group specific, e.g. **ADAO Builder Development**, **ADAO Builder Administration**
+
+3. **Community Associates** | Discord role: **ADAO Supporter**
+
+Any member of the Cardano community who chooses to associate with ADAO.  Even if an individual does not yet hold any GovTokens they can engage in legitimate peripheral participation by engaging in community discussions to help guide DAO efforts. By joining the ADAO discord server and verifying oneself the role is automatically assigned by the system.
+
+4. **Core Contributor**
+
+There shall also be members selected to serve on an advisory group of Core Contributors.  These advisors will be responsible for managing the administrative operations of ADAO, overseeing the social media and communication channels, and organizing meetings of ADAO members. 
 
 Core Contributors may also be responsible for leading the Working Groups of ADAO and serve as multi-sig trustees of any Associated Contracts established by the ADAO Governing Smart Contract.  Individuals will serve in this role until their term expires, they are recalled, or they resign according to the procedures set up in the Governing Smart Contract.
-ADAO Coordination
-In order to function properly ADAO shall appoint working groups to carry out certain tasks. These working groups will run for a Dozen (12) Epochs, or roughly 60 days. This organizational period shall be known as "The Dozen" and establish the natural cadence of ADAO as an organization.
 
-With a deadline of two epochs before The Dozen is slated to begin, ADAO members shall submit proposals detailing how The Dozen shall be structured. Each proposal should outline:
+5. **Working Group Lead**
 
-1. What ADAO Members shall be designated as the Core Contributors
-2. What working groups will be funded in The Dozen
-3. The bounty to be paid out to each working group
-4. The Core Contributor(s) responsible for organizing each working group
-5. The end date of The Dozen (which should be 12 epochs in the future unless some special circumstance dictates otherwise).
+_Missing definition_
+
+## ADAO Coordination
+
+In order to function properly ADAO shall appoint core contributors to carry out certain tasks. For a member to become a core contributor they are required to hold the active contributor role and informally voice interest in becoming a CC. To decide if a member will become a CC an official vote has to be initiated, deciding if a members becomes a CC, two existing core contributors have to support the proposal. If the proposal passes with a majority approval of 51% of all tokens in circulation the member will be assigned the core contributor role by server administrators.
+
+Every ADAO member shall be able to initiate the removal of an existing core contributor. The only prerequisite is that the removal proposal is supported by two existing core contributors. If the proposal passes with a majority approval of 51% of all tokens in circulation the core contributor role will be removed from the member by server administrators.
+
+Every **X** epochs one or more core contributor compensation proposals shall be created and voted on by GovToken holders to award the contribution of existing core contributors since the last compensation proposal has been passed. In this proposal core contributors will list the work they have done, as well as their desired compensation in ADAO GovTokens. The voting period begins **X-1** epochs after the last compensation proposal passed and lasts 72 hours or until a majortiy approval rating of 51% of all tokens in circulation has been reached.
+
+The designated bounties shall be paid from the ADAO Treasury into Associated Smart Contracts immediately upon passage of a proposal. These contracts shall have trusted ADAO members designated as Bounty Judges who will control disbursement of the funds. This approach has been chosen to ensure funds can be allocated without requiring a general vote of all ADAO token holders for a basic bounty proposal. The contracts will also have an expiration date encoded, after which time any Cardano wallet can be used to send the unspent funds back to the ADAO treasury.  If any ADAO members believe that the funds were awarded unwisely by the muti-signatories they may appeal to the other members to hold them accountable when considering future bounties.
 
 It should also be noted:
 
-1. Standing groups shall include Administration, Development, Community Management, Education, Governance, Treasury, Outreach, Legal, Graphic Design & Branding, and Public Relation & Marketing.
+1. Standing working groups shall include Administration, Development, Catalyst, Community Management, Education, Governance, Treasury, Legal, Branding-Media & Public Relations.
 2. Ad-hoc groups may be formed as needs arise.
-3. 
-Voting for The Dozen proposals shall be on-chain with Gov Tokens. The voting period begins one epoch before the start of The Dozen and ends 24 hours before The Dozen is slated to  begin.  One winner will be picked according to the rules of the Primary Smart Contract and competing proposals will be discarded. While the Core Contributors will be expected to put forth a proposal for the coming Dozen, competing proposals may be submitted by any ADAO member.
-
-The designated bounties shall be paid from the ADAO Treasury into Associated Smart Contracts immediately upon passage of a proposal. These contracts shall have trusted ADAO members designated as Bounty Judges who will control disbursement of the funds. This approach has been chosen to ensure funds can be allocated without requiring a general vote of all ADAO token holders for a basic bounty proposal. The contracts will also have an expiration date encoded, after which time any Cardano wallet can be used to send the unspent funds back to the ADAO treasury.  If any ADAO members believe that the funds were awarded unwisely by the muti-signatories they may appeal to the other members to hold them accountable when considering future bounties.
 
 ## The ADAO Foundation
 
